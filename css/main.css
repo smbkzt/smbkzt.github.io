@@ -987,3 +987,11 @@ a.search {
     display: block;
 }
 /*End for action bar drop down*/
+
+.footer-tab-active{
+    display: block;
+}
+
+.footer-tab-inactive{
+    display: none;
+}

@@ -6,10 +6,11 @@
     <title>TempWorks Enterprise</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
-<div class="container">
+<div class="container" id="mainContainer">
     <!-- Beginning of a row -->
     <div class="row">
         <div class="col-md-12">
@@ -19,11 +20,11 @@
                         <img src="images/logo.png" alt=""> TempWorks Enterprise
                     </div>
                     <div class="save-top-logo">
-                        <img src="images/save-icon.png" alt="">
+                        <img id="save-top-id" onclick=saveLogoClick() src="images/save-icon.png" alt="">
                     </div>
 
                     <div class="arrow-left-right">
-                        <img src="images/arrow-leftt.png" alt="">
+                        <img id="arror-left" onclick=leftArrowClick() src="images/arrow-leftt.png" alt="">
                         <img src="images/arrow-right.png" alt="">
                     </div>
 
@@ -50,7 +51,7 @@
                 <img src="images/triangle-arrows.png" alt="">
             </div>
             <div class="user-avatar">
-                <img src="images/Hathaway.jpg" alt="">
+                <img id="user-logo" onclick=avatarClick() src="images/Hathaway.jpg" alt="">
             </div>
 
             <div class="user-info">
@@ -99,32 +100,42 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="tasks-section">
-                <h3 class="task-section__title">tasks</h3>
-                <div class="icons">
-                    <img src="images/green-plus.png" alt="">
-                    <img src="images/trash-icon.png" alt="">
-                    <img src="images/green-arrow.png" alt="">
-                </div>
-                <img class="arrow_bottom" src="images/triangle_arrow_white.png" alt="">
-                <div class="task-section__info">
-                    <p><img src="images/info.png" alt=""> There are no tasks to display. You can adjust your filter
-                        settings to customize this view</p>
+            <div class="footer-tab-active" id="footer-tab">
+                <div class="tasks-section">
+                    <h3 class="task-section__title">tasks</h3>
+                    <div class="icons">
+                        <img src="images/green-plus.png" alt="">
+                        <img src="images/trash-icon.png" alt="">
+                        <img src="images/green-arrow.png" alt="">
+                    </div>
+                    <img class="arrow_bottom" src="images/triangle_arrow_white.png" alt="">
+                    <div class="task-section__info">
+                        <p><img src="images/info.png" alt=""> There are no tasks to display. You can adjust your filter
+                            settings to customize this view</p>
+                    </div>
                 </div>
             </div>
+            <div class="footer-tab-inactive" id="footer-tab-inactive">
+                <div class="tasks-section">
+                    <h3 class="task-section__title">No design</h3>
+                    <div class="task-section__info">
+                        <p><img src="images/info.png" alt="">No design</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="side-bar__footer">
-                <div class="side-bar__footer-tab _active">
-                    <img src="images/notepad_check.png" alt="">
+                <div class="side-bar__footer-tab _active" id="footer-tab1">
+                    <img onclick=makeFooterTabActive() src="images/notepad_check.png" alt="">
                 </div>
-                <div class="side-bar__footer-tab">
-                    <img src="images/calendar-wathces.png" alt="">
+                <div class="side-bar__footer-tab" id="footer-tab2">
+                    <img onclick=makeFooterTabInActive() src="images/calendar-wathces.png" alt="">
                 </div>
-                <div class="side-bar__footer-tab">
-                    <img src="images/konvert.png" alt="">
+                <div class="side-bar__footer-tab" id="footer-tab3">
+                    <img onclick=makeFooterTabInActive() src="images/konvert.png" alt="">
                 </div>
-                <div class="side-bar__footer-tab">
-                    <img src="images/lupa01.png" alt="">
+                <div class="side-bar__footer-tab" id="footer-tab4">
+                    <img onclick=makeFooterTabInActive() src="images/lupa01.png" alt="">
                 </div>
             </div>
         </div>
