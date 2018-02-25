@@ -13,3 +13,14 @@ dropdownArray.forEach(function(el) {
 
     button.addEventListener('click', toggleDropdown);
 });
+
+function makeFooterTabActive() {
+    document.getElementById("footer-tab").className = "footer-tab-active";
+    document.getElementById("footer-tab-inactive").className = "footer-tab-inactive";
+}
+
+function makeFooterTabInActive() {
+    document.getElementById("footer-tab").className = "footer-tab-inactive";
+    document.getElementById("footer-tab-inactive").className = "footer-tab-active";
+    document.getElementById("footer-tab*").className += "_active";
+}
