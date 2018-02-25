@@ -377,6 +377,7 @@ tabs {
 }
 
 .tabs label.tab-label {
+    color: white;
     display: block;
     width: 80px;
     padding: 10px;
@@ -395,6 +396,7 @@ tabs {
 }
 
 .tabs label.tab-label:hover {
+    color: black;
     background: #ecf3fb;
 }
 
@@ -414,6 +416,7 @@ tabs {
 }
 
 .tabs [id^="tab"]:checked + label.tab-label {
+    color: black;
     top: 0;
     padding-top: 17px;
     background: #ecf3fb;
@@ -747,7 +750,8 @@ img.arrow_bottom {
 }
 
 .chkbox {
-    margin: 0;
+    margin-top: 30px;
+    margin-bottom: -15px;
 }
 
 .contacts img {
