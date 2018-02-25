@@ -967,7 +967,6 @@ a.search {
 }
 
 .dropdown-content {
-    margin-top: 5px;
     display: none;
     position: absolute;
     background-color: #ecf3fb;
