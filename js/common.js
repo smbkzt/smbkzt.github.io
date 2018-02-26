@@ -14,15 +14,26 @@ dropdownArray.forEach(function(el) {
     button.addEventListener('click', toggleDropdown);
 });
 
-function makeFooterTabActive() {
-    document.getElementById("footer-tab").className = "footer-tab-active";
-    document.getElementById("footer-tab-inactive").className = "footer-tab-inactive";
+function deactivateAllTablinks(evt){
+    tablinks = document.getElementsByClassName("footer-tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" _active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    evt.currentTarget.className += " _active";
+}
+
+function makeFooterTabActive(evt) {
+    document.getElementById("footer-tab-active-id").className = "footer-tab-active";
+    document.getElementById("footer-tab-inactive-id").className = "footer-tab-inactive";
+    deactivateAllTablinks(evt);
 };
 
-function makeFooterTabInActive() {
-    document.getElementById("footer-tab").className = "footer-tab-inactive";
-    document.getElementById("footer-tab-inactive").className = "footer-tab-active";
-    document.getElementById("footer-tab*").className += "_active";
+function makeFooterTabInActive(evt) {
+    document.getElementById("footer-tab-active-id").className = "footer-tab-inactive";
+    document.getElementById("footer-tab-inactive-id").className = "footer-tab-active";
+    deactivateAllTablinks(evt);
 };
 
 function avatarClick(){

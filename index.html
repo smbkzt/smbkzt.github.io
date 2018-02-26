@@ -100,7 +100,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-tab-active" id="footer-tab">
+            <div class="footer-tab-active" id="footer-tab-active-id">
                 <div class="tasks-section">
                     <h3 class="task-section__title">tasks</h3>
                     <div class="icons">
@@ -115,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-tab-inactive" id="footer-tab-inactive">
+            <div class="footer-tab-inactive" id="footer-tab-inactive-id">
                 <div class="tasks-section">
                     <h3 class="task-section__title">No design</h3>
                     <div class="task-section__info">
@@ -125,17 +125,17 @@
             </div>
 
             <div class="side-bar__footer">
-                <div class="side-bar__footer-tab _active" id="footer-tab1">
-                    <img onclick=makeFooterTabActive() src="images/notepad_check.png" alt="">
+                <div onclick=makeFooterTabActive(event) class="side-bar__footer-tab footer-tablinks _active" id="footer-tab1">
+                    <img src="images/notepad_check.png" alt="">
                 </div>
-                <div class="side-bar__footer-tab" id="footer-tab2">
-                    <img onclick=makeFooterTabInActive() src="images/calendar-wathces.png" alt="">
+                <div onclick=makeFooterTabInActive(event) class="side-bar__footer-tab footer-tablinks" id="footer-tab2">
+                    <img src="images/calendar-wathces.png" alt="">
                 </div>
-                <div class="side-bar__footer-tab" id="footer-tab3">
-                    <img onclick=makeFooterTabInActive() src="images/konvert.png" alt="">
+                <div onclick=makeFooterTabInActive(event) class="side-bar__footer-tab footer-tablinks" id="footer-tab3">
+                    <img src="images/konvert.png" alt="">
                 </div>
-                <div class="side-bar__footer-tab" id="footer-tab4">
-                    <img onclick=makeFooterTabInActive() src="images/lupa01.png" alt="">
+                <div onclick=makeFooterTabInActive(event) class="side-bar__footer-tab footer-tablinks" id="footer-tab4">
+                    <img src="images/lupa01.png" alt="">
                 </div>
             </div>
         </div>
