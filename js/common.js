@@ -14,6 +14,7 @@ dropdownArray.forEach(function(el) {
     button.addEventListener('click', toggleDropdown);
 });
 
+// Footer tabs
 function deactivateAllTablinks(evt){
     tablinks = document.getElementsByClassName("footer-tablinks");
     for (i = 0; i < tablinks.length; i++) {
@@ -36,6 +37,8 @@ function makeFooterTabInActive(evt) {
     deactivateAllTablinks(evt);
 };
 
+// End footer Tabs
+// Animate css
 function avatarClick(){
     $('#user-logo').addClass('animated flip');
 };
@@ -47,3 +50,4 @@ function saveLogoClick(){
 function leftArrowClick(){
     $('#arror-left').addClass('animated flip');
 };
+// End Animate css

@@ -20,7 +20,7 @@
                         <img src="images/logo.png" alt=""> TempWorks Enterprise
                     </div>
                     <div class="save-top-logo">
-                        <img id="save-top-id" onclick=saveLogoClick() src="images/save-icon.png" alt="">
+                        <img id="save-top-id" onclick="saveLogoClick()" src="images/save-icon.png" alt="">
                     </div>
 
                     <div class="arrow-left-right">
@@ -51,7 +51,7 @@
                 <img src="images/triangle-arrows.png" alt="">
             </div>
             <div class="user-avatar">
-                <img id="user-logo" onclick=avatarClick() src="images/Hathaway.jpg" alt="">
+                <img id="user-logo" onclick="avatarClick('user-logo', 'animated flip')"" src="images/Hathaway.jpg" alt="">
             </div>
 
             <div class="user-info">
@@ -125,16 +125,16 @@
             </div>
 
             <div class="side-bar__footer">
-                <div onclick=makeFooterTabActive(event) class="side-bar__footer-tab footer-tablinks _active" id="footer-tab1">
+                <div onclick="makeFooterTabActive(event)" class="side-bar__footer-tab footer-tablinks _active" id="footer-tab1">
                     <img src="images/notepad_check.png" alt="">
                 </div>
-                <div onclick=makeFooterTabInActive(event) class="side-bar__footer-tab footer-tablinks" id="footer-tab2">
+                <div onclick="makeFooterTabInActive(event)" class="side-bar__footer-tab footer-tablinks" id="footer-tab2">
                     <img src="images/calendar-wathces.png" alt="">
                 </div>
-                <div onclick=makeFooterTabInActive(event) class="side-bar__footer-tab footer-tablinks" id="footer-tab3">
+                <div onclick="makeFooterTabInActive(event)" class="side-bar__footer-tab footer-tablinks" id="footer-tab3">
                     <img src="images/konvert.png" alt="">
                 </div>
-                <div onclick=makeFooterTabInActive(event) class="side-bar__footer-tab footer-tablinks" id="footer-tab4">
+                <div onclick="makeFooterTabInActive(event)" class="side-bar__footer-tab footer-tablinks" id="footer-tab4">
                     <img src="images/lupa01.png" alt="">
                 </div>
             </div>
@@ -599,11 +599,11 @@
 </div>
 </div>
 
+<script src="js/common.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/classie.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/common.js"></script>
 </body>
 
 </html>
