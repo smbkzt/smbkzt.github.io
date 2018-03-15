@@ -527,8 +527,15 @@ tabs {
 /* dropdown-list end*/
 
 body {
-    background-color: #20476a;
+    background-color: #336485;
     min-height: 100%;
+}
+
+.bgc {
+    position: absolute;
+    background: url('../images/bgc-1.png') no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 img {
@@ -589,7 +596,6 @@ img {
 
 .folder-download-top-right{
     margin-top: 5px;
-    display: inline-block;
     float: right;
 }
 
@@ -836,12 +842,17 @@ thead tr th {
     padding: 4px;
 }
 
-.message-table,
-.assignments-table,
-.codes-table {
+tbody {
     height: 200px;
-    overflow-y: auto;
+    overflow: auto;
 }
+
+td {
+    padding: 3px 10px;
+}
+
+thead > tr, tbody{
+    display:block;}
 
 .side-bar__footer {
     margin-top: -2px;
